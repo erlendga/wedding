@@ -1,3 +1,11 @@
-<div class="container">
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    Jolly good!
+  </md-sidenav>
+  <div class="example-sidenav-content">
+    <button md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
   <contact-list></contact-list>
-</div>
+</md-sidenav-container>
