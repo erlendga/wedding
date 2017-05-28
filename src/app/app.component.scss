@@ -3,8 +3,11 @@
     flex-direction: column;
 }
 
-h1{
-    color: white;
+h1, h2{
+    color: #cd9b1d;
+    align-self: center;
+    margin: 0;
+    font-size: 39px;
 }
 
 header{
@@ -30,7 +33,8 @@ content{
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
-    
+    justify-content: center;
+    flex-direction: column;
 }
 
 .menu-btn{
