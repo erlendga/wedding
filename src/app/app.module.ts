@@ -1,29 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdSidenavModule, MdButtonModule, MdIconModule, MdListModule } from "@angular/material";
-
 import { AppComponent } from './app.component';
-import { ContactDetailsComponent } from "./contacts/contact-details/contact-details.component";
-import { ContactListComponent } from "./contacts/contact-list/contact-list.component";
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ContactDetailsComponent,
-    ContactListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    MdSidenavModule,
-    MdButtonModule,
-    MdIconModule,
-    MdListModule
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

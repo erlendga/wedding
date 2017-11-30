@@ -1,0 +1,29 @@
+@import url('../node_modules/@angular/material/prebuilt-themes/indigo-pink.css');
+body {
+    font-family: 'Pinyon Script', cursive;
+    margin: 0;
+}
+
+.mat-list .mat-list-item .mat-list-item-content,
+.mat-nav-list .mat-list-item .mat-list-item-content {
+    font-family: 'Pinyon Script', cursive !important;
+    font-size: 28px !important;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+app-root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

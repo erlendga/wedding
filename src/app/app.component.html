@@ -1,19 +1,22 @@
-<md-sidenav-container class="example-container">
-  <header>
-    <button class="menu-btn" md-button (click)="sidenav.open()">
-      <md-icon>menu</md-icon>
-    </button>
-  </header>
-  <md-sidenav #sidenav align="end" class="example-sidenav">
-    <md-list>
-      <md-list-item>Påmelding</md-list-item>
-      <md-list-item>Kirken</md-list-item>
-      <md-list-item>Festen</md-list-item>
-    </md-list>
-  </md-sidenav>
-  <content>
-    <h1>18.08.2018</h1>
-    <h1>Haslum Kirke</h1>
-    <h1>Strand Restaurant</h1>
-  </content>
-</md-sidenav-container>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav align="end" mode="over" #sidenav class="example-sidenav">
+
+    <mat-list>
+      <mat-list-item>Påmelding</mat-list-item>
+      <mat-list-item>Kirken</mat-list-item>
+      <mat-list-item>Festen</mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <header>
+        <button class="menu-btn" mat-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </header>
+      <h1>18.08.2018</h1>
+      <h1>Haslum Kirke</h1>
+      <h1>Strand Restaurant</h1>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

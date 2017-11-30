@@ -1,35 +1,44 @@
-:host{
+:host {
     display: flex;
     flex-direction: column;
 }
 
-h1, h2{
+h1,
+h2 {
     color: #cd9b1d;
     align-self: center;
     margin: 0;
     font-size: 39px;
 }
 
-header{
+header {
     display: flex;
     justify-content: flex-end;
     height: 55px;
 }
 
-md-sidenav-container{
-   background-color: transparent;
-   flex: 1;
+mat-sidenav-container {
+    background-color: transparent;
+    flex: 1;
 }
 
-md-icon{
+mat-icon {
     color: white;
 }
 
-md-sidenav{
-    width: 80%;
+// mat-sidenav {
+//     width: 80%;
+// }
+
+.content {
+    background: url('/assets/images/background.jpeg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-content{
+content {
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
@@ -37,6 +46,17 @@ content{
     flex-direction: column;
 }
 
-.menu-btn{
-    float: right;
+.menu-btn {
+    align-self: flex-end;
+}
+
+mat-sidenav-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent);
+    opacity: .6;
 }
