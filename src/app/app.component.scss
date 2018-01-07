@@ -1,58 +1,10 @@
-// :host {
-//     display: flex;
-//     flex-direction: column;
-// }
-// h1,
-// h2 {
-//     color: #cd9b1d;
-//     align-self: center;
-//     margin: 0;
-//     font-size: 39px;
-// }
-// header {
-//     display: flex;
-//     justify-content: flex-end;
-//     height: 55px;
-// }
-// mat-sidenav-container {
-//     background-color: transparent;
-//     flex: 1;
-// }
-// mat-icon {
-//     color: white;
-// }
-// // mat-sidenav {
-// //     width: 80%;
-// // }
-// .content {
-//     background: url('/assets/images/background.jpeg') center center no-repeat;
-//     background-size: cover;
-//     display: flex;
-//     flex-direction: column;
-//     height: 100%;
-// }
-// content {
-//     display: flex;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//     justify-content: center;
-//     flex-direction: column;
-// }
-// .menu-btn {
-//     align-self: flex-end;
-// }
-// mat-sidenav-content::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent);
-//     opacity: .6;
-// }
 $gold: #998100;
-:host{
+a {
+    text-decoration: none;
+    color: $gold;
+}
+
+:host {
     color: $gold;
 }
 
@@ -76,7 +28,7 @@ $gold: #998100;
 .card {
     display: flex;
     justify-content: space-around;
-    &__title{
+    &__title {
         font-size: 30px;
         margin-bottom: 3px;
     }
@@ -110,7 +62,7 @@ $gold: #998100;
         flex-direction: column;
         width: 100%;
         align-items: center;
-        &-img{
+        &-img {
             width: 100%;
             height: 200px;
             background-size: cover;
@@ -122,13 +74,13 @@ $gold: #998100;
             }
             margin-right: 2px;
         }
-        &--saturday{
+        &--saturday {
             margin-left: 2px;
             .card__menu-img {
                 background-image: url('/assets/images/rings.jpeg');
             }
         }
-        &--wishlist{
+        &--wishlist {
             margin-right: 2px;
             .card__menu-img {
                 background-image: url('/assets/images/gift.jpeg');

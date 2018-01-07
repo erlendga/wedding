@@ -9,10 +9,20 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { RouterModule, Routes } from '@angular/router';
+import { FridayComponent } from './friday/friday.component';
+
+const appRoutes: Routes = [
+  {
+    path: 'friday',
+    component: FridayComponent
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FridayComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +33,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
