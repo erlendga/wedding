@@ -11,18 +11,29 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterModule, Routes } from '@angular/router';
 import { FridayComponent } from './friday/friday.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
   {
     path: 'friday',
     component: FridayComponent
+  },
+  {
+    path: 'welcome',
+    component: WelcomeComponent
+  },
+  {
+    path: '',
+    redirectTo: '/welcome',
+    pathMatch: 'full'
   }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    FridayComponent
+    FridayComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

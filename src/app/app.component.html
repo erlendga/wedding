@@ -1,33 +1,7 @@
 <div class="container">
-  <ng-container *ngIf="router.url === '/'">
-    <div class="header">
-      <div class="header__names">Christine & Erlend</div>
-      <div>18.08.2018</div>
-    </div>
-    <div class="card">
-      <div class="card__img card__img--christine"></div>
-      <div class="card__img card__img--erlend"></div>
-    </div>
-    <div class="card">
-      <a class="card__menu card__menu--friday" routerLink="/friday" routerLinkActive="active">
-        <div class="card__title">Fredagen</div>
-        <div class="card__menu-img"></div>
-      </a>
-      <div class="card__menu card__menu--saturday">
-        <div class="card__title">Lørdagen</div>
-        <div class="card__menu-img"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card__menu card__menu--wishlist">
-        <div class="card__title">Ønskelisten</div>
-        <div class="card__menu-img"></div>
-      </div>
-      <div class="card__menu card__menu--saturday">
-        <div class="card__title">Brudefølge</div>
-        <div class="card__menu-img"></div>
-      </div>
-    </div>
-  </ng-container>
+  <div class="header">
+    <h1 class="header__names">Christine & Erlend</h1>
+    <h2>18.08.2018</h2>
+  </div>
   <router-outlet></router-outlet>
 </div>
