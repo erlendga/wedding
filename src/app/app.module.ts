@@ -12,6 +12,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterModule, Routes } from '@angular/router';
 import { FridayComponent } from './friday/friday.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SaturdayComponent } from './saturday/saturday.component';
+import { WishListComponent } from './wish-list/wish-list.component';
+import { BridalProcessionComponent } from './bridal-procession/bridal-procession.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +24,18 @@ const appRoutes: Routes = [
   {
     path: 'welcome',
     component: WelcomeComponent
+  },
+  {
+    path: 'saturday',
+    component: SaturdayComponent
+  },
+  {
+    path: 'wish-list',
+    component: WishListComponent
+  },
+  {
+    path: 'bridal-procession',
+    component: BridalProcessionComponent
   },
   {
     path: '',
@@ -33,7 +48,10 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     FridayComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SaturdayComponent,
+    WishListComponent,
+    BridalProcessionComponent
   ],
   imports: [
     BrowserModule,

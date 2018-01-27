@@ -2,15 +2,14 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { routeAnimation } from '../animations';
 
 @Component({
-  selector: 'app-friday',
-  templateUrl: './friday.component.html',
-  styleUrls: ['./friday.component.scss'],
+  selector: 'app-saturday',
+  templateUrl: './saturday.component.html',
+  styleUrls: ['./saturday.component.scss'],
   animations: [routeAnimation]
 })
-export class FridayComponent implements OnInit {
+export class SaturdayComponent implements OnInit {
   @HostBinding('@routeAnimation') routeAnimation = true;
   @HostBinding('style.display') display = 'block';
-
   constructor() { }
 
   ngOnInit() {
