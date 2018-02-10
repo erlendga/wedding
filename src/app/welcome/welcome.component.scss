@@ -1,4 +1,5 @@
 @import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
 
 :host{
     justify-self: stretch;
@@ -9,7 +10,7 @@
 .card {
     display: flex;
     &__title {
-        font-size: 30px;
+        // font-size: 30px;
         margin-bottom: 3px;
     }
     &__img {
@@ -29,6 +30,14 @@
             background-image: url('/assets/images/erlend.jpg');
             margin-left: 2px;
         }
+
+        @include tablet{
+            height: 400px;
+        }
+
+        @include desktop{
+            height: 800px;
+        }
     }
     &__menu {
         background-clip: content-box;
@@ -44,6 +53,15 @@
             height: 200px;
             background-size: cover;
             background-position-x: center;
+
+            @include tablet{
+                height: 400px;
+            }
+
+            @include desktop{
+                height: 800px;
+            }
+        
         }
         &--friday {
             .card__menu-img {
