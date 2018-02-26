@@ -80,5 +80,11 @@
                 background-image: url('/assets/images/gift.jpeg');
             }
         }
+        &--bridal-procession{
+            margin-left: 2px;
+            .card__menu-img {
+                background-image: url('/assets/images/sign.jpg');
+            }
+        }
     }
 }
