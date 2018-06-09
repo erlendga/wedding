@@ -1,6 +1,6 @@
-import { animate, AnimationEntryMetadata, state, style, transition, trigger } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
-export const routeAnimation: AnimationEntryMetadata =
+export const routeAnimation =
     trigger('routeAnimation', [
         state('*',
             style({

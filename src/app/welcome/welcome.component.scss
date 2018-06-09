@@ -21,13 +21,9 @@
         border: 1px solid $gold;
         background-clip: content-box;
         padding: 5px;
-        &--christine {
-            background-image: url('/assets/images/christine.jpg');
+        &--top {
+            background-image: url('/assets/images/front.jpg');
             margin-right: 2px;
-        }
-        &--erlend {
-            background-image: url('/assets/images/erlend.jpg');
-            margin-left: 2px;
         }
 
         @include tablet{
