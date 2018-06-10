@@ -13,6 +13,7 @@ export class SaturdayComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });    
   }
 
 }

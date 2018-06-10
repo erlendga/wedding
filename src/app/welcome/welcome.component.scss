@@ -23,7 +23,6 @@
         padding: 5px;
         &--top {
             background-image: url('/assets/images/front.jpg');
-            margin-right: 2px;
         }
 
         @include tablet{
@@ -43,6 +42,8 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
+        cursor: pointer;
+        
         &-img {
             width: 100%;
             height: 200px;
